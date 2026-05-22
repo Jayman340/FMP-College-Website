@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<h1>SolarWinds (2020)</h1>
+
+
+<h2>Summary</h2>
+<p>
+The SolarWinds attack was a major cybersecurity breach discovered in December 2020, involving a sophisticated supply chain attack on the SolarWinds Orion software platform. 
+Attackers inserted malicious code into legitimate software updates, allowing them to gain access to thousands of organisations worldwide (CIS, n.d.).
+</p>
+
+<p>
+The attack affected approximately 18,000 customers, including government agencies and large companies, making it one of the most significant cyber espionage campaigns in history (Fortinet, 2026).
+</p>
+
+<h2>How It Operated</h2>
+<p>
+The attackers infiltrated SolarWinds’ development environment and inserted a backdoor, known as SUNBURST, into the Orion software updates (Microsoft, 2017).
+</p>
+
+<p>
+These malicious updates were digitally signed and distributed through official channels, meaning organisations installed them without suspicion as part of routine updates (Fortinet, 2026).
+</p>
+
+<p>
+Once installed, the malware remained inactive for a period to avoid detection before communicating with external command-and-control servers to receive instructions (Infosec Institute, 2021).
+</p>
+
+<p>
+Attackers then used this access to move laterally across networks, steal sensitive data, and monitor systems over long periods without detection (CISA, n.d.).
+</p>
+
+<p>
+The attack was highly selective, with attackers focusing on specific high-value targets after gaining initial access through the supply chain compromise.
+</p>
+
+<h2>How It Was Resolved</h2>
+<p>
+The SolarWinds attack was discovered by cybersecurity company FireEye in December 2020 after detecting unusual activity within its own systems (CSO Online, 2020).
+</p>
+
+<p>
+Following the discovery, affected organisations were advised to immediately disconnect compromised SolarWinds systems, apply security patches, and investigate potential breaches (CISA, 2021).
+</p>
+
+<p>
+Remediation was complex due to the deep level of access attackers had gained, often requiring organisations to rebuild systems, reset credentials, and conduct extensive forensic analysis (CISA, 2021).
+</p>
+
+<p>
+Governments and cybersecurity agencies coordinated responses to share threat intelligence and improve detection of similar supply chain attacks in the future.
+</p>
+
+<h2>What Changed</h2>
+<ul>
+  <li>
+  Highlighted the dangers of supply chain attacks, where trusted software updates can be used to spread malware (Fortinet, 2026).
+  </li>
+
+  <li>
+  Demonstrated that attackers can remain undetected for long periods by blending in with legitimate network activity (Infosec Institute, 2021).
+  </li>
+
+  <li>
+  Showed the importance of securing software development processes and build environments (CIS, n.d.).
+  </li>
+
+  <li>
+  Reinforced the role of nation-state actors in cyber espionage and large-scale attacks (CISA, n.d.).
+  </li>
+
+  <li>
+  Led to increased focus on supply chain security and zero trust security models in organisations worldwide (CISOMEET, 2025).
+  </li>
+</ul>
+
+<h2>Defender Takeaways</h2>
+<ul>
+  <li>
+  Organisations should secure their software supply chains and verify the integrity of updates before deployment.
+  </li>
+
+  <li>
+  Continuous monitoring is essential to detect unusual behaviour rather than relying solely on perimeter security (CISOMEET, 2025).
+  </li>
+
+  <li>
+  Zero trust security models should be implemented to reduce reliance on trusted internal systems.
+  </li>
+
+  <li>
+  Access controls and credential management should be strengthened to prevent attackers moving freely within networks (CISA, n.d.).
+  </li>
+
+  <li>
+  Incident response plans must include third-party suppliers, as attacks may originate outside the organisation.
+  </li>
+</ul>
+
+<a href="/html/cybertimeline.html">Back</a>
+</html>

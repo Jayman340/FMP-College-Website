@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<div class="topnav">
+  <a class="active" href="/html/cybertimeline.html">Timeline</a>
+  <a href="/html/glossary.html">Glossary</a>
+  <a href="/html/sources.html">Sources</a>
+  <a href="/index.html">About</a>
+</div>
+<h2>Cyber Threat Timeline</h2>
+
+<input type="text" id="searchBox" placeholder="Search events...">
+
+<select id="era">
+  <option value="all">All eras</option>
+  <option value="era1">Early Internet Worms & Email Outbreaks (1999-2004)</option>
+  <option value="era2">Botnets & Mass Exploitation (2005-2012)</option>
+  <option value="era3">Ransomware & Disruption at Scale (2013-2018)</option>
+  <option value="era4">Supply Chain & Data Extortion (2019-present)</option>
+</select>
+
+<select id="type">
+  <option value="all">All types</option>
+  <option value="worm">Worm</option>
+  <option value="ransomware">Ransomware</option>
+  <option value="wiper">Wiper</option>
+  <option value="supply-chain">Supply Chain Attack</option>
+  <option value="cyber-weapon">Cyber Weapon</option>
+  <option value="extortion">Data Extortion</option>
+</select>
+
+<select id="vector">
+  <option value="all">All vectors</option>
+  <option value="email">Email / Phishing</option>
+  <option value="network-exploit">Network Exploit</option>
+  <option value="credential">Credential Abuse</option>
+  <option value="usb">Removable Media (USB)</option>
+  <option value="supply-chain">Software Supply Chain</option>
+  <option value="multi">Multi-vector</option>
+</select>
+
+<button onclick="resetFilters()">Reset</button>
+
+<div id="cards">
+
+  <!-- Era 1 -->
+<div class="card" data-era="era1" data-type="worm" data-vector="email">
+  <h3>ILOVEYOU (2000)</h3>
+  <p>Type: Email worm</p>
+  <p>Vector: Email attachment</p>
+  <p>This virus spread through emails pretending to be from someone you know.</p>
+ <a href="/html/events/iloveyou.html" class="learn-btn">Learn More</a>
+</div>
+
+
+
+ <div class="card" data-era="era1" data-type="worm" data-vector="email">
+    <h3>Mydoom (2004)</h3>
+    <p>Type: Worm</p>
+    <p>Vector: Email and network spread</p>
+    <p>One of the fastest spreading worms at the time. It was used to overload websites and cause disruption.</p>
+  <a href="/html/events/mydoom.html" class="learn-btn">Learn More</a>
+  </div>
+
+  <!-- Era 2 -->
+  <div class="card" data-era="era2" data-type="worm" data-vector="exploit">
+    <h3>Conficker (2008)</h3>
+    <p>Type: Worm / Botnet</p>
+    <p>Vector: Weak passwords and vulnerabilities</p>
+    <p>Conficker created a huge botnet by exploiting weak security on computers and networks.</p>
+  <a href="/html/events/conficker.html" class="learn-btn">Learn More</a>
+  </div>
+ 
+  <div class="card" data-era="era2" data-type="cyber-weapon" data-vector="usb">
+    <h3>Stuxnet (2010)</h3>
+    <p>Type: Cyber-weapon</p>
+    <p>Vector: Infected USB / Zero-day Exploits</p>
+    <p>Stuxnet was specifically engineered to cause damage to Iranian uranium enrichment facilities.</p>
+  <a href="/html/events/stuxnet.html" class="learn-btn">Learn More</a>
+  </div>
+  <!-- Era 3 -->
+  <div class="card" data-era="era3" data-type="ransomware" data-vector="network-exploit">
+    <h3>WannaCry (2017)</h3>
+    <p>Type: Ransomware</p>
+    <p>Vector: Unpatched systems</p>
+    <p>This attack locked files and demanded payment. It affected hospitals and organisations worldwide.</p>
+  <a href="/html/events/wannacry.html" class="learn-btn">Learn More</a>
+  </div>
+
+  <div class="card" data-era="era3" data-type="wiper" data-vector="supply-chain">
+    <h3>NotPetya (2017)</h3>
+    <p>Type: Wiper malware</p>
+    <p>Vector: Software update exploit</p>
+    <p>It looked like ransomware but actually destroyed data. It spread rapidly through company networks.</p>
+  <a href="/html/events/notpetya.html" class="learn-btn">Learn More</a>
+  </div>
+
+  <!-- Era 4 -->
+  <div class="card" data-era="era4" data-type="supply-chain" data-vector="supply-chain">
+    <h3>SolarWinds (2020)</h3>
+    <p>Type: Supply chain attack</p>
+    <p>Vector: Third-party software</p>
+    <p>Hackers accessed organisations through a trusted software update, affecting governments and businesses.</p>
+  <a href="/html/events/solarwinds.html" class="learn-btn">Learn More</a>
+  </div>
+
+  <div class="card" data-era="era4" data-type="extortion" data-vector="multi">
+    <h3>Data Extortion Trend</h3>
+    <p>Type: Data extortion</p>
+    <p>Vector: Data theft and threats</p>
+    <p>Attackers steal data and threaten to release it unless payment is made, increasing pressure on victims.</p>
+  <a href="/html/events/dataextortiontrend.html" class="learn-btn">Learn More</a>
+  </div>
+
+</div>
+<script src="/js/timelinescript.js"></script>

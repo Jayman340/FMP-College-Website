@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<h1>Stuxnet (2010)</h1>
+
+<h2>Summary</h2>
+<p>
+Stuxnet was a highly sophisticated computer worm discovered in 2010 and is widely considered the first known cyberweapon. 
+Unlike traditional malware, it was specifically designed to target industrial control systems and cause physical damage to real-world equipment (Britannica, 2026).
+</p>
+
+<p>
+The worm primarily targeted Iran's nuclear facilities, where it disrupted uranium enrichment by damaging centrifuges. 
+It infected thousands of systems worldwide but only activated its destructive payload on very specific industrial configurations (Wikipedia, n.d.).
+</p>
+
+<h2>How It Operated</h2>
+<p>
+Stuxnet spread primarily through infected USB drives, allowing it to reach air-gapped systems that were not connected to the internet. 
+This enabled it to bypass traditional network security measures (ScienceInsights, 2026).
+Once inside a system, the worm exploited multiple zero-day vulnerabilities in Windows to gain control and spread across networks without detection. 
+It also used stolen digital certificates to appear as legitimate software (ScienceInsights, 2026).
+</p>
+
+<p>
+The malware specifically searched for Siemens Step7 software used to manage industrial control systems. 
+When it detected the correct configuration, it targeted programmable logic controllers (PLCs) controlling nuclear centrifuges (Wikipedia, n.d.).
+Stuxnet then altered the speed of the centrifuges, causing them to spin at unsafe levels and eventually break. 
+At the same time, it sent false data to system monitors, making it appear as though everything was functioning normally (Britannica, 2026).
+</p>
+
+<h2>How It Was Resolved</h2>
+<p>
+Stuxnet was first discovered in 2010 by cybersecurity researchers analysing unusual malware activity on infected systems. 
+Security firms such as Kaspersky Lab played a key role in identifying and analysing the worm’s behaviour (IEEE Spectrum, 2013).
+</p>
+
+Once identified, security updates and antivirus detection methods were developed to remove the malware and prevent further spread.
+However, due to its complexity and ability to exploit unknown vulnerabilities, complete removal was difficult and took time.
+The attack eventually diminished as affected systems were patched and isolated, but it highlighted the difficulty of detecting and responding to highly advanced malware.
+</p>
+
+<h2>What Changed</h2>
+<ul>
+  <li>
+  Demonstrated for the first time in history that malware could cause physical damage to industrial infrastructure (Britannica, 2026).
+  </li>
+
+  <li>
+  Marked the beginning of cyber warfare, showing that nation-states could use malware as a strategic weapon (CSO Online, 2022).
+  </li>
+
+  <li>
+  Highlighted vulnerabilities in industrial control systems (ICS) and SCADA environments that were previously considered secure (Cyberly, n.d.).
+  </li>
+
+  <li>
+  Showed the effectiveness of highly targeted attacks, as Stuxnet only activated on specific systems rather than spreading randomly (Wikipedia, n.d.).
+  </li>
+
+  <li>
+  Increased awareness of zero-day exploits and their role in advanced cyberattacks (ScienceInsights, 2026).
+  </li>
+</ul>
+
+<h2>Defender Takeaways</h2>
+<ul>
+  <li>
+  Critical infrastructure systems should be continuously monitored and updated, even if they are not connected to the internet (Cyberly, n.d.).
+  </li>
+
+  <li>
+  Removable media such as USB drives should be controlled or restricted to prevent malware from entering secure environments (ScienceInsights, 2026).
+  </li>
+
+  <li>
+  Organisations should apply security patches promptly to reduce the risk of zero-day exploit attacks (CSO Online, 2022).
+  </li>
+
+  <li>
+  Industrial control systems should be secured separately from standard IT systems to limit potential damage (Praesidion, 2026).
+  </li>
+
+  <li>
+  Security teams must consider the possibility of highly targeted, state-sponsored attacks when protecting critical systems.
+  </li>
+</ul>
+
+<a href="/html/cybertimeline.html">Back</a>
+</html>

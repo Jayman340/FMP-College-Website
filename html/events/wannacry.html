@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<h1>WannaCry (2017)</h1>
+
+<h2>Summary</h2>
+<p>
+WannaCry was a global ransomware attack that began in May 2017, infecting computers across more than 150 countries. 
+It worked by encrypting files on infected systems and demanding a ransom payment in Bitcoin to restore access (Wikipedia, n.d.).
+The attack spread rapidly due to its worm-like behaviour, allowing it to move automatically across networks without user interaction. 
+It impacted over 300,000 systems worldwide and caused major disruption to businesses and critical infrastructure, including healthcare services (Wikipedia, n.d.).
+</p>
+
+<p>
+The attack had a significant impact on the UK's National Health Service (NHS), where many systems were running outdated or unpatched versions of Windows. 
+The ransomware caused major disruption to hospital operations, with at least 34% of NHS trusts affected and thousands of appointments and operations cancelled (NAO, 2017).
+In some cases, hospitals were unable to access patient records or critical systems, forcing staff to revert to manual processes such as paper records and telephone communication. 
+This disruption affected patient care, with delays to treatment and patients being diverted to other hospitals (ICO, n.d.)
+
+
+</p>
+
+<h2>How It Operated</h2>
+<p>
+WannaCry spread by exploiting a vulnerability in the Windows Server Message Block (SMB) protocol, using a leaked exploit known as EternalBlue (Cybernews, 2023).
+This exploit allowed attackers to send specially crafted network packets to vulnerable systems and execute malicious code remotely without authentication (Microsoft, 2008).
+</p>
+
+<p>
+Once inside a system, the ransomware encrypted files using strong cryptographic algorithms, making them inaccessible to users. 
+A ransom demand was then displayed, requesting payment in Bitcoin in exchange for a decryption key (CSO Online, 2017).
+Unlike traditional ransomware, WannaCry functioned as a worm, meaning it could scan networks for other vulnerable systems and infect them automatically. 
+This allowed it to spread extremely quickly across organisations and the internet (SecurityAffairs, 2026).
+The attack particularly affected outdated or unpatched systems, such as those running older versions of Windows like Windows XP, which remained vulnerable to the exploit (Wikipedia, n.d.).
+</p>
+
+<h2>How It Was Resolved</h2>
+<p>
+The rapid spread of WannaCry was slowed when a security researcher, Marcus Hutchins, discovered a “kill switch” within the malware's code. 
+By registering a specific domain name used by the worm, Hutchins was able to prevent further infections and significantly reduce its spread (McAfee, 2017).
+Microsoft had already released a security patch (MS17-010) before the attack, which fixed the vulnerability exploited by WannaCry. 
+Systems that had applied this update were protected from infection (NHS Digital, 2017).
+</p>
+
+<p>
+Following the attack, organisations implemented emergency security measures, including patching vulnerable systems, isolating infected networks, and improving monitoring to prevent further spread.
+Despite these efforts, the attack highlighted how difficult it can be to fully stop malware once it spreads rapidly across global networks.
+</p>
+
+<h2>What Changed</h2>
+<ul>
+  <li>
+  Demonstrated how ransomware could combine with worm capabilities to spread automatically across networks (SecurityAffairs, 2026).
+  </li>
+
+  <li>
+  Highlighted the risks of unpatched systems, as many organisations had not installed available security updates before the attack (NHS Digital, 2017).
+  </li>
+
+  <li>
+  Showed how leaked government-developed exploits could be used in large-scale cyberattacks (Cybernews, 2023).
+  </li>
+
+  <li>
+  Exposed weaknesses in critical infrastructure, with major disruption to healthcare services such as the NHS (NAO, 2017).
+  </li>
+
+  <li>
+  Increased awareness of ransomware as a major global cybersecurity threat rather than just individual attacks (IBM, n.d.).
+  </li>
+</ul>
+<h2>Defender Takeaways</h2>
+<ul>
+  <li>
+  Systems should be regularly updated with security patches to prevent exploitation of known vulnerabilities (NHS Digital, 2017).
+  </li>
+
+  <li>
+  Organisations should avoid using outdated software that no longer receives security updates (Wikipedia, n.d.).
+  </li>
+
+  <li>
+  Network segmentation should be used to limit how far malware can spread within an organisation (SecurityAffairs, 2026).
+  </li>
+
+  <li>
+  Regular backups should be maintained so data can be recovered without paying ransom demands (CSO Online, 2017).
+  </li>
+
+  <li>
+  Monitoring and incident response plans should be in place to quickly detect and contain outbreaks (IBM, n.d.).
+  </li>
+</ul>
+
+<a href="/html/cybertimeline.html">Back</a>
+</html>

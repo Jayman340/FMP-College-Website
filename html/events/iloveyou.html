@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<h1>ILOVEYOU (2000)</h1>
+
+
+<h2>Summary</h2>
+<p>
+The ILOVEYOU worm was a large-scale email-based malware outbreak that began in May 2000 and spread rapidly across the internet. 
+It relied on social engineering, sending emails with the subject “ILOVEYOU” and an attachment named “LOVE-LETTER-FOR-YOU.txt.vbs”, which tricked users into opening it (Huntress, 2025).
+The worm spread extremely quickly, infecting millions of computers worldwide and causing major disruption to businesses and government organisations. 
+It is considered one of the most widespread and damaging early malware outbreaks (Wikipedia, n.d.).
+</p>
+
+
+<h2>How It Operated</h2>
+<p>
+The worm used a double file extension (“.txt.vbs”) to disguise itself as a text file. 
+Because Windows systems at the time hid known file extensions by default, users often only saw “.txt”, which made the attachment appear safe and helped it spread (Huntress, 2025).
+</p>
+
+<p>
+When opened, the file executed a Visual Basic Script using Windows Script Host. 
+This allowed the malware to run automatically and begin its payload (Wikipedia, n.d.).
+</p>
+
+<p>
+The worm then accessed Microsoft Outlook and sent copies of itself to every contact in the user's address book, allowing it to spread rapidly across networks without needing advanced vulnerabilities (Computer Hope, 2025).
+</p>
+
+<p>
+It also overwrote files such as images, documents and audio files with copies of its own code, causing data loss. 
+In some cases, it attempted to download additional malware and steal passwords from infected systems (GeeksforGeeks, 2025).
+</p>
+
+<h2>How It Was Resolved</h2>
+<p>
+Organisations responded by shutting down email systems to prevent the worm from spreading further, as it relied heavily on email communication (Computer Hope, 2025).
+</p>
+
+<p>
+Antivirus companies analysed the worm and released detection signatures and removal tools, helping systems identify and remove the infection (Computer Hope, 2025).
+</p>
+
+<p>
+In the longer term, the attack led to improvements in cybersecurity practices, including better email filtering, safer handling of attachments, and changes to how operating systems display file extensions and run scripts (CLRN, 2025).
+</p>
+
+<p>
+Overall, the ILOVEYOU worm highlighted weaknesses in both system design and user awareness, leading to stronger protections against email-based malware and social engineering attacks.
+</p>
+
+<h2>What Changed</h2>
+
+<ul>
+  <li>
+  Showed how effective social engineering could be at a large scale, as users were easily tricked into opening a malicious attachment (Huntress, 2025).
+  </li>
+
+  <li>
+  Highlighted weaknesses in operating system design, particularly the default setting that hid known file extensions, making malicious files appear safe (Huntress, 2025).
+  </li>
+
+  <li>
+  Demonstrated how trusted applications like Microsoft Outlook could be abused to rapidly spread malware across organisations (Computer Hope, 2025).
+  </li>
+
+  <li>
+  Proved that malware did not need complex exploits to be successful, as simple scripting and automation were enough to cause major global disruption (Wikipedia, n.d.).
+  </li>
+
+  <li>
+  Increased awareness of email as a major attack vector, especially within businesses and government systems (GeeksforGeeks, 2025).
+  </li>
+</ul>
+
+
+<h2>Defender Takeaways</h2>
+<ul>
+  <li>
+  Users should be trained not to open unexpected email attachments, even if they appear to come from known contacts, as this is a common social engineering tactic (Huntress, 2025).
+  </li>
+
+  <li>
+  Email filtering systems should be used to detect and block suspicious attachments before they reach users (CLRN, 2025).
+  </li>
+
+  <li>
+  Operating systems should not hide important file details such as extensions, as this can make malicious files harder to detect (Huntress, 2025).
+  </li>
+
+  <li>
+  Organisations should limit automatic script execution to reduce the risk of malware running without user awareness (CLRN, 2025).
+  </li>
+
+  <li>
+  Regular backups should be maintained to reduce the impact of file overwriting or data loss caused by malware (GeeksforGeeks, 2025).
+  </li>
+</ul>
+
+<a href="/html/cybertimeline.html">Back</a>
+</html>

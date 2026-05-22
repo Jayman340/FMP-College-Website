@@ -1,0 +1,235 @@
+/* Main styling for all pages (colours, elements etc) */
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #279AF1;
+  color: white;
+}
+
+/* background + text */
+body {
+  margin: 0px;
+  color: azure;
+  background-color: black;
+}
+
+/* Styling for timeline cards and page */
+
+/* container for all cards */
+#cards {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* each card (main timeline box) */
+.card {
+  background-color: #111;
+  padding: 15px; /* adds space inside */
+  margin-bottom: 20px; /* space between cards */
+  border-left: 4px solid #279AF1; /* blue line */
+  border-radius: 4px;
+  transition: 0.2s; /* makes hover smooth */
+}
+
+/* slight zoom + colour change on hover */
+.card:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.02);
+}
+
+/* title inside card */
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #279AF1;
+}
+
+/* text inside card */
+.card p {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+/* learn more button */
+.learn-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #279AF1;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* button hover */
+.learn-btn:hover {
+  background-color: #1f7ed6;
+}
+
+
+/* search + dropdown filters */
+#searchBox, select {
+  margin: 10px 5px;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Styling for Sources page */
+
+.source {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.source h3 {
+  color: #279AF1;
+}
+
+/* improve readability of source text */
+.source p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* source links */
+.source a {
+  color: #279AF1;
+  text-decoration: none;
+}
+
+.source a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for Glossary page */
+
+/* glossary container (keeps it centred) */
+#glossary {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* each glossary term box */
+.term {
+  background-color: #111;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #279AF1;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+/* hover effect like timeline cards */
+.term:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.02);
+}
+
+/* term title */
+.term h3 {
+  margin: 0 0 5px 0;
+  color: #279AF1;
+}
+
+/* term text */
+.term p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* glossary search box */
+#searchGlossary {
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+} 
+/* Container for all source cards */
+.sources-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2px;
+}
+
+/* Individual source card */
+.source-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect (matches timeline feel) */
+.source-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Card headings */
+.source-card h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  border-bottom: 2px solid #4da6ff;
+  padding-bottom: 5px;
+}
+
+/* List style */
+.source-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual source items */
+.source-card li {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Links */
+.source-card a {
+  color: #4da6ff;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+/* Link hover */
+.source-card a:hover {
+  text-decoration: underline;
+  color: #80c1ff;
+}
+
+/* Optional: make titles slightly glow on hover */
+.source-card:hover h2 {
+  color: #80c1ff;
+}
+
+
